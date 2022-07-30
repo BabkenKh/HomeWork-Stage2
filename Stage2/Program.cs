@@ -10,6 +10,7 @@ namespace Stage2
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("dsjf");
         }
     }
 }

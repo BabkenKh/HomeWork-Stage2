@@ -12,7 +12,26 @@ namespace Stage2
 
         static void Main(string[] args)
         {
+            Console.WriteLine("What do you want Shawarma(S) or Burger(B) ? ");
             
+                string choose = Console.ReadLine();
+                if (choose == "S")
+                {
+                    Shawarma shawarma = new Shawarma();
+                    shawarma.Size();
+                    shawarma.IsDiet();
+                    shawarma.Price();
+                    shawarma.Caloria();
+
+                }
+                else if (choose == "B")
+                {
+                   
+                    
+                }
+                
+            
+            Console.ReadKey();
         }
     }
 }

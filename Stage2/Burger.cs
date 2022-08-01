@@ -6,8 +6,23 @@ using System.Threading.Tasks;
 
 namespace Stage2
 {
-    class Burger : Food 
+    class Burger : Food
     {
-        
+
+        private int myVar;
+
+        public int MyProperty
+        {
+            get
+            {
+                return myVar;
+            }
+            set
+            {
+                myVar = value;
+            }
+        }
+
+
     }
 }

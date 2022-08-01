@@ -29,8 +29,8 @@ namespace Stage2
                    
                     
                 }
-                
-            
+            Burger burger = new Burger();
+
             Console.ReadKey();
         }
     }

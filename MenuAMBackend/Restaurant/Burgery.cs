@@ -17,14 +17,14 @@ namespace MenuAMBackend
 
         public override bool isDelivery()
         {
-            return true;
+            return false;
         }
 
 
         
         public override void Repay()
         {
-            Console.WriteLine("d");
+            Console.WriteLine();
         }
 
 

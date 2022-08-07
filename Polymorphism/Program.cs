@@ -12,6 +12,7 @@ namespace Polymorphism
         {
             Cat cat = new Cat();
             cat.Price();
+
         }
     }
 }

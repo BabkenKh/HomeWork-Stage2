@@ -11,5 +11,7 @@ namespace MenuAMBackend
          string Adress { get; set; }
          string PhoneNumber { get; set; }
 
+
+
     }
 }

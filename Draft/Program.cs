@@ -16,6 +16,7 @@ namespace Draft
         Satruday,
         Sunday,
     }
+    
     class Program
     {
         

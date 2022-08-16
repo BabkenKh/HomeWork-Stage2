@@ -35,6 +35,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RefOutIn", "RefOutIn", "{BB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reference", "Reference\Reference.csproj", "{0A80A75C-84F9-4417-8BDD-8F432F2206E6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStructures", "DataStructures", "{60815762-FD35-4497-89FE-095C328FBE6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{EB774736-9CC9-42BE-9876-AAB8ABDDBD4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +77,10 @@ Global
 		{0A80A75C-84F9-4417-8BDD-8F432F2206E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A80A75C-84F9-4417-8BDD-8F432F2206E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A80A75C-84F9-4417-8BDD-8F432F2206E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB774736-9CC9-42BE-9876-AAB8ABDDBD4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB774736-9CC9-42BE-9876-AAB8ABDDBD4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB774736-9CC9-42BE-9876-AAB8ABDDBD4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB774736-9CC9-42BE-9876-AAB8ABDDBD4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,6 +95,7 @@ Global
 		{09325347-E4F5-40D5-8573-30F843B1B4E8} = {E24BBD9D-DD27-49AA-9F82-FB8ED824DBC2}
 		{F87B0FEA-3A2A-4498-97F5-6D612E8CD4F0} = {B443252E-0E0B-430C-A928-C60D9D962EDF}
 		{0A80A75C-84F9-4417-8BDD-8F432F2206E6} = {BBD8E597-CE29-460C-8DEC-246A932F410B}
+		{EB774736-9CC9-42BE-9876-AAB8ABDDBD4F} = {60815762-FD35-4497-89FE-095C328FBE6B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1F75967E-7F84-4C5F-BBF6-C6A1FCD54828}

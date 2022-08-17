@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F87B0FEA-3A2A-4498-97F5-6D612E8CD4F0}</ProjectGuid>
+    <ProjectGuid>{8711863A-1342-420E-8A56-6FFC3A72699A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>WorkWithDelegate</RootNamespace>
-    <AssemblyName>WorkWithDelegate</AssemblyName>
+    <RootNamespace>WorkWithFiles</RootNamespace>
+    <AssemblyName>WorkWithFiles</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GivePrice.cs" />
-    <Compile Include="Human.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

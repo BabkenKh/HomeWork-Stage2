@@ -11,10 +11,13 @@ namespace WorkWithDelegate
      
         static void Main(string[] args)
         {
-            GivePrice givePrice = new GivePrice();
-            givePrice.priceNow = ShowPrice;
+            Human human = new Human();
+            Action action = new Action(human.WakeUp);
 
-            givePrice.Start();
+            action += human.BreakFast;
+            action += human.Smoking;
+
+            action.Invoke();
 
             Console.ReadKey();
         }

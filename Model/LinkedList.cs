@@ -20,8 +20,10 @@ namespace Model
             if(Head == null)
             {
                 Head = new Node(data);
-            }else
+            }
+            else
             {
+                Head.previous = Head;
                 Head.AddToEnd(data);
             }
         }
@@ -35,6 +37,7 @@ namespace Model
             {
                 Node temp = new Node(data);
                 temp.next = Head;
+                temp.previous = null;
                 Head = temp;
             }
         }

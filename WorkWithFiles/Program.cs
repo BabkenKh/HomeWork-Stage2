@@ -30,7 +30,7 @@ namespace WorkWithFiles
             {
                 byte[] buf = new byte[fileStream.Length];
 
-                //int read = fileStream.Read(buf, 0, buf.Length);
+                int read = fileStream.Read(buf, 0, buf.Length);
 
                 Console.WriteLine(Encoding.ASCII.GetString(buf,0,buf.Length));
             }
@@ -39,7 +39,7 @@ namespace WorkWithFiles
         }
         static void Main(string[] args)
         {
-            string path = @"C:\Users\Babken\Desktop";
+            string path = @"C:\Users\Babken\Desktop\Draft.txt";
 
             WriteFile(path);
             ReadFile(path);

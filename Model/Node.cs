@@ -12,10 +12,13 @@ namespace Model
 
         public Node next { get; set; }
 
+        public Node previous { get; set; }
+
         public Node(int value)
         {
             this.value = value;
             next = null;
+            previous = null;
         }
 
         public void AddToEnd(int data)
@@ -23,14 +26,15 @@ namespace Model
             if(next == null)
             {
                 next = new Node(data);
-            }else
+            }
+            else
             {
                 next.AddToEnd(data);
             }
         }
         public void Print()
         {
-            Console.Write($"|{value}| -> ");
+            Console.Write($"<-|{value}| -> ");
             if(next != null)
             {
                 next.Print();

@@ -44,6 +44,7 @@ namespace SortAlgorithms
             }
 
         }
+        //////////////////////////////////////////////
         static void BubleSort(int[] arr, int size)
         {
             for (int i = 0; i < size; ++i)
@@ -59,6 +60,7 @@ namespace SortAlgorithms
                 }
             }
         }
+        //////////////////////////////////////////////
         static void InsertionSort(int[] arr, int size)
         {
             for (int i = 0; i < size; ++i)
@@ -74,6 +76,7 @@ namespace SortAlgorithms
                 }
             }
         }
+        //////////////////////////////////////////////
         static void CountingSort(int[] arr, int size)
         {
             int max_value = arr[0];
@@ -108,6 +111,7 @@ namespace SortAlgorithms
                 }
             }
         }
+        //////////////////////////////////////////////
         static int[] Merge(int[] left, int[] right)
         {
             int[] merge = new int[left.Length + right.Length];
@@ -139,7 +143,7 @@ namespace SortAlgorithms
             }
 
             return merge;
-        }
+        } // Proccess merging. Helping method
         static void MergeSort(int[] arr, int size)
         {
             if (arr.Length <= 1)
@@ -165,6 +169,48 @@ namespace SortAlgorithms
 
 
         }
+        //////////////////////////////////////////////
+        static int Partition(int[] arr, int i, int j)
+        {
+            int pivot = i;
+            int s1_index = i;
+            int s2_index = i;
+
+            for (int k = i+1; k < j; ++k)
+            {
+                if (arr[k] >= arr[pivot])
+                {
+                    ++s2_index;
+                }
+                else
+                {
+                    ++s1_index;
+                    int temp = arr[s1_index];
+                    arr[s1_index] = arr[k];
+                    arr[k] = temp;
+                    ++s2_index;
+                }
+            }
+            int tempo = arr[pivot];
+            arr[pivot] = arr[s1_index];
+            arr[s1_index] = tempo;
+
+            pivot = s1_index;
+            return pivot;
+
+        }
+        static void QuickSort(int[] arr, int i, int size)
+        {
+            if (i == size)
+            {
+                return;
+            }
+            int pivot = Partition(arr, i, size);
+            QuickSort(arr, i, pivot);
+            QuickSort(arr, pivot + 1, size);
+
+        }
+
         static void Main(string[] args)
         {
             int size = 10;
@@ -185,7 +231,8 @@ namespace SortAlgorithms
             //BubleSort(arr, arr.Length); O(n^2)
             //InsertionSort(arr, arr.Length); O(n^2)
             //CountingSort(arr, arr.Length);  O(n+m)
-            //MergeSort(arr, arr.Length);
+            //MergeSort(arr, arr.Length); O(nlog(n))
+            //QuickSort(arr, 0, arr.Length); O(nlog(n))
 
 
 

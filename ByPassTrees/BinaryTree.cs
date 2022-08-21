@@ -53,6 +53,31 @@ namespace ByPassTrees
                 }
             }
         }
+        public void Search(int data)
+        {
+            Node current = root;
+
+            while (current != null)
+
+            {
+
+                if (data == current.value)
+                {
+                    Console.WriteLine("Your element exist!!!");
+                    return;
+                }
+                else if (data < current.value)
+                {
+                    current = current.lef;
+                }
+                else
+                {
+                    current = current.right;
+                }
+            }
+            Console.WriteLine("Your element non exsist!!!");
+
+        }
         public void Preorder(Node Root)
         {
             if (Root != null)

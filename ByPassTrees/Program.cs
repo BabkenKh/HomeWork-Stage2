@@ -13,12 +13,13 @@ namespace ByPassTrees
             BInaryTree binaryTree = new BInaryTree();
             Random rnd = new Random();
             int i = 0;
-
-            while(i < 10)
+            while (i < 10)
             {
                 binaryTree.Insert(rnd.Next(100));
                 ++i;
             }
+
+            binaryTree.Insert(64);
 
             Console.Write("Postorder: ");
             binaryTree.Postorder(binaryTree.root);
@@ -28,6 +29,9 @@ namespace ByPassTrees
             Console.WriteLine();
             Console.Write("Preorder: ");
             binaryTree.Preorder(binaryTree.root);
+            Console.WriteLine();
+
+            binaryTree.Search(64);
 
             Console.ReadKey();
         }

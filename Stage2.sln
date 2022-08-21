@@ -51,6 +51,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortAlgorithms", "SortAlgorithms\SortAlgorithms.csproj", "{E4C02862-71B2-474E-82A5-2A4E4B45D30B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdvanceDataStructures", "AdvanceDataStructures", "{7E202238-0478-4982-B214-72531F5255C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByPassTrees", "ByPassTrees\ByPassTrees.csproj", "{59DB8763-774D-441E-AA5B-804930EF373B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +109,10 @@ Global
 		{E4C02862-71B2-474E-82A5-2A4E4B45D30B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4C02862-71B2-474E-82A5-2A4E4B45D30B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4C02862-71B2-474E-82A5-2A4E4B45D30B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59DB8763-774D-441E-AA5B-804930EF373B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59DB8763-774D-441E-AA5B-804930EF373B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59DB8763-774D-441E-AA5B-804930EF373B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59DB8763-774D-441E-AA5B-804930EF373B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -123,6 +131,7 @@ Global
 		{8711863A-1342-420E-8A56-6FFC3A72699A} = {FC4E9275-6FFC-428C-91F5-A671A582BF9A}
 		{AEE1C828-A819-45A8-A3C6-BB1929F6A03F} = {F07ADB71-FCE7-4E3E-99DF-839D3AE08D39}
 		{E4C02862-71B2-474E-82A5-2A4E4B45D30B} = {23233634-81A2-4C40-BA2B-56F188693B08}
+		{59DB8763-774D-441E-AA5B-804930EF373B} = {7E202238-0478-4982-B214-72531F5255C3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1F75967E-7F84-4C5F-BBF6-C6A1FCD54828}

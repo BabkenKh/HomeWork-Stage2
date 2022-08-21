@@ -198,7 +198,7 @@ namespace SortAlgorithms
             pivot = s1_index;
             return pivot;
 
-        }
+        } // Helping method for pivot
         static void QuickSort(int[] arr, int i, int size)
         {
             if (i == size)
@@ -210,12 +210,13 @@ namespace SortAlgorithms
             QuickSort(arr, pivot + 1, size);
 
         }
+        //////////////////////////////////////////////
 
         static void Main(string[] args)
         {
-            int size = 10;
+            int size = 10; // Size array
             int[] arr = new int[size];
-            int[] copy_arr = new int[size];
+            int[] copy_arr = new int[size]; // Copy array for compare
             Random rnd = new Random();
 
             for (int i = 0; i < size; ++i)
@@ -223,24 +224,20 @@ namespace SortAlgorithms
 
                 arr[i] = rnd.Next(100);
                 copy_arr[i] = arr[i];
-            }
+            } // Random value in array
 
-            Array.Sort(copy_arr);
+            Array.Sort(copy_arr); // 
 
             //SelectionSort(arr, arr.Length); O(n^2)
             //BubleSort(arr, arr.Length); O(n^2)
             //InsertionSort(arr, arr.Length); O(n^2)
             //CountingSort(arr, arr.Length);  O(n+m)
             //MergeSort(arr, arr.Length); O(nlog(n))
-            //QuickSort(arr, 0, arr.Length); O(nlog(n))
-
-
-
-
+            //QuickSort(arr, 0, arr.Length); O(nlog(n)) 
 
             Console.WriteLine(CheckEqual(arr, copy_arr));
-
             Console.ReadKey();
+
         }
     }
 }

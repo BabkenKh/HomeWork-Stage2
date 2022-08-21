@@ -15,6 +15,7 @@ namespace Reactangle
         {
             this.side1 = side1;
             this.side2 = side2;
+
         }
 
 

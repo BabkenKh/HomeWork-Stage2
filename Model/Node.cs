@@ -14,31 +14,6 @@ namespace Model
 
         public Node previous { get; set; }
 
-        public Node(int value)
-        {
-            this.value = value;
-            next = null;
-            previous = null;
-        }
-
-        public void AddToEnd(int data)
-        {
-            if(next == null)
-            {
-                next = new Node(data);
-            }
-            else
-            {
-                next.AddToEnd(data);
-            }
-        }
-        public void Print()
-        {
-            Console.Write($"<-|{value}| -> ");
-            if(next != null)
-            {
-                next.Print();
-            }
-        }
+       
     }
 }

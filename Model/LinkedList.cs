@@ -15,40 +15,28 @@ namespace Model
             Head = null;
         }
 
-        public void AddToEnd(int data)
+        public void InsertBegin(int data)
         {
-            if(Head == null)
-            {
-                Head = new Node(data);
-            }
-            else
-            {
-                Head.previous = Head;
-                Head.AddToEnd(data);
-            }
-        }
-        public void AddToBegin(int data)
-        {
+            Node newNode = new Node();
+            newNode.value = data;
+
             if (Head == null)
             {
-                Head = new Node(data);
+                Head = newNode;
             }
             else
             {
-                Node temp = new Node(data);
-                temp.next = Head;
-                temp.previous = null;
-                Head = temp;
+                Node current = Head;         
+                Head = newNode;
+                Head.next = current;
+                Head.next.previous = Head;
+                Head.previous = null;
+
             }
         }
-
         public void Print()
         {
-            if(Head != null)
-            {
-                Head.Print();
-            }
-
+            Console.WriteLine(" Value"+Head.next.previous.value);
         }
     }
 }
